@@ -1,10 +1,19 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OceanFront Market Dashboard</title>
+    <script type="text/javascript">
+        // Password prompt
+        var password = prompt("Enter password:");
+
+        // If password is incorrect, redirect to another page
+        if (password !== "ofg2025") {
+            alert("Incorrect password");
+            window.location.href = "https://www.example.com";  // Redirect to another page if incorrect
+        }
+    </script>
 </head>
 <body>
     <div class='tableauPlaceholder' id='viz1734622787117' style='position: relative'>
