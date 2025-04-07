@@ -40,4 +40,18 @@
     // Embed Tableau Dashboard
     var containerDiv = document.getElementById("vizContainer");
 
-    var url =
+    var url = "https://public.tableau.com/views/OceanFrontMarketDashboard/Story1";
+
+    var options = {
+      hideTabs: true,
+      width: "100%",
+      height: "100%",
+      onFirstInteractive: function () {
+        console.log("Tableau Viz Loaded");
+      }
+    };
+
+    var viz = new tableau.Viz(containerDiv, url, options);
+  </script>
+</body>
+</html>
